@@ -5,7 +5,7 @@
 ![Sample Screenshots](https://github.com/Abel5173/JavaFX-Login-With-JDBC/blob/main/Screenshots/login.png)
 ---
 
-## Login sample Taken screenshot 
+## signUp sample Taken screenshot 
 ![Sample Screenshots](https://github.com/Abel5173/JavaFX-Login-With-JDBC/blob/main/Screenshots/signUp.png)
 ---
 
