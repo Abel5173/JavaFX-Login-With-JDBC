@@ -14,9 +14,9 @@
 ---
 
 ## 👉Requirments👈
-  * JDK - 17.0.2
-  * JavaFX SDK - 17.0.2
-  * JFoenix - 9.0.10
+  * jdk-18
+  * mysql-connector-java-8.0.29
+  * javafx-sdk-18.0.1
   ---
 ## vmArgs SetUp
 
