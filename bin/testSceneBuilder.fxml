@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane fx:id="login_pane" prefHeight="498.0" prefWidth="600.0" style="-fx-background-color: #15133C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btn_login" layoutX="150.0" layoutY="326.0" mnemonicParsing="false" onAction="#Login" prefHeight="39.0" prefWidth="300.0" style="-fx-background-color: #F66B0E;" text="Login">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_signup" layoutX="150.0" layoutY="378.0" mnemonicParsing="false" onAction="#signUpPane" prefHeight="39.0" prefWidth="300.0" style="-fx-background-color: #EFEFEF;" text="SignUp">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txt_username" layoutX="150.0" layoutY="166.0" prefHeight="35.0" prefWidth="300.0" promptText="Username Here" style="-fx-background-color: #EFEAD8; -fx-border-color: #B22727; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txt_password" layoutX="150.0" layoutY="224.0" prefHeight="35.0" prefWidth="300.0" promptText="Password Here" style="-fx-background-color: #EFEAD8; -fx-border-color: #B22727; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </PasswordField>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="14.0" prefHeight="122.0" prefWidth="600.0" text="WKU Login" textFill="#efefef">
+               <font>
+                  <Font name="Verdana Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="invalid" alignment="CENTER" layoutX="1.0" layoutY="282.0" prefHeight="17.0" prefWidth="600.0" textFill="#f50202">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signup_pane" layoutY="-6.0" prefHeight="498.0" prefWidth="600.0" style="-fx-background-color: #15133C;" visible="false" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <children>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="30.0" prefWidth="600.0" text="SignUp" textFill="#f1eee9">
+               <font>
+                  <Font name="Verdana Bold" size="38.0" />
+               </font>
+            </Label>
+            <GridPane hgap="15.0" layoutX="81.0" layoutY="64.0" prefHeight="310.0" prefWidth="438.0" vgap="15.0" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="64.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="172.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="201.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="First Name" textFill="#f1eee9">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Last Name" textFill="#f1eee9" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="UserName" textFill="#f1eee9" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="122.0" text="email" textFill="#f1eee9" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="155.0" text="Confirm Password" textFill="#f1eee9" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="223.0" text="Password" textFill="#f1eee9" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="password_signup" style="-fx-background-color: #EFEAD8; -fx-border-color: #FF4949; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="confirm_password_signup" style="-fx-background-color: #EFEAD8; -fx-border-color: #FF4949; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <TextField fx:id="firstname_signup" style="-fx-background-color: #EFEAD8; -fx-border-color: #FF4949; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="lastname_signup" layoutX="106.0" layoutY="15.0" style="-fx-background-color: #EFEAD8; -fx-border-color: #FF4949; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="email_signup" layoutX="106.0" layoutY="49.0" style="-fx-background-color: #EFEAD8; -fx-border-color: #FF4949; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="username_signup" layoutX="106.0" layoutY="117.0" style="-fx-background-color: #EFEAD8; -fx-border-color: #FF4949; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </GridPane>
+            <Button fx:id="submit_btn" layoutX="139.0" layoutY="448.0" mnemonicParsing="false" onAction="#add_user" prefHeight="39.0" prefWidth="346.0" text="Submit">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="sgnup_warning" alignment="CENTER" layoutX="-1.0" layoutY="403.0" prefHeight="17.0" prefWidth="600.0" textFill="#f80505">
+               <font>
+                  <Font name="Verdana" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="welcomePane" layoutY="-6.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #15133C;" visible="false" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <children>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="39.0" prefWidth="600.0" text="Welcome to WKU Students Portal" textFill="#f1eee9">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="exit" layoutX="394.0" layoutY="496.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="39.0" prefWidth="179.0" style="-fx-background-color: #EC994B;" text="Exit">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="75.0" fitWidth="83.0" layoutX="75.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/3551739.jpg" />
+               </image>
+            </ImageView>
+            <ListView fx:id="listView" layoutX="23.0" layoutY="142.0" prefHeight="337.0" prefWidth="548.0" style="-fx-background-color: #73777B;" />
+            <Label fx:id="hello" alignment="CENTER" layoutX="145.0" layoutY="71.0" prefHeight="39.0" prefWidth="346.0" textFill="#ec994b">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
