@@ -2,21 +2,21 @@
 
 
 ## Login sample Taken screenshot 
-![Sample Screenshots] (https://github.com/Abel5173/JavaFX-Login-With-JDBC/blob/main/Screenshots/login.png)
+![Sample Screenshots](https://github.com/Abel5173/JavaFX-Login-With-JDBC/blob/main/Screenshots/login.png)
 ---
 
 ## Login sample Taken screenshot 
-![Sample Screenshots] (https://github.com/Abel5173/JavaFX-Login-With-JDBC/blob/main/Screenshots/signUp.png)
+![Sample Screenshots](https://github.com/Abel5173/JavaFX-Login-With-JDBC/blob/main/Screenshots/signUp.png)
 ---
 
 ## Welcome sample Taken screenshot 
-![Sample Screenshots] (https://github.com/Abel5173/JavaFX-Login-With-JDBC/blob/main/Screenshots/welcomePage.png)
+![Sample Screenshots](https://github.com/Abel5173/JavaFX-Login-With-JDBC/blob/main/Screenshots/welcomePage.png)
 ---
 
 ## 👉Requirments👈
-  JDK - 17.0.2
-  JavaFX SDK - 17.0.2
-  JFoenix - 9.0.10
+  * JDK - 17.0.2
+  * JavaFX SDK - 17.0.2
+  * JFoenix - 9.0.10
   ---
 ## vmArgs SetUp
 
